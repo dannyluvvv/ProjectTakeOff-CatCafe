@@ -5,21 +5,25 @@ body {
     background-color: #f4f4f4;
 }
 
+*{
+    transition: all 0.15s ease-in-out;
+}
+
 .container {
     width: 80%;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 header {
-    background-color: #ffb6c1;
+    background-color: pink;
     padding: 20px 0;
     text-align: center;
 }
 
 header h1 {
-    margin: 0;
+    margin: auto ;
     font-size: 2.5em;
-    color: #333;
+    color: #000;
 }
 
 nav ul {
@@ -34,13 +38,29 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #000;
     font-size: 1.2em;
+    padding: 1rem 2rem;
+    letter-spacing: 0.5rem;
+    border-radius: 2em;
 }
 
+nav ul li a:hover{
+    color:palevioletred;
+    background-color: white;
+    box-shadow: palevioletred 0px 0px 15px 4px, pink 0 0 5px 1px inset;
+}
+
+nav ul li a:active{
+    color:red;
+    background-color: transparent;
+    box-shadow: white 0px 0px 15px 5px, white 0 0 5px 5em inset;
+}
+
+
 section {
-    padding: 20px 0;
-    border-bottom: 1px solid #ddd;
+    padding: 2em 0;
+    border-bottom: 3px dotted lightpink;
 }
 
 section h2 {
@@ -75,14 +95,19 @@ section h2 {
 .gallery-images img {
     margin: 10px;
     width: 200px;
-    height: 200px;
+    height: 100px;
     object-fit: cover;
     border-radius: 10px;
 }
 
+.gallery-images img:hover{
+    width: 500px;
+    height: 500px;
+}
+
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: royalblue;
+    color: white;
     text-align: center;
     padding: 10px 0;
     position: relative;
